@@ -1,0 +1,20 @@
+---
+title: "Assigned Reading- Breiman"
+editor: visual
+---
+
+## 
+
+Reading Material
+
+[{{< fa file-pdf >}} Click here to download/view the article: Breiman - Statistical Modeling](pdfs/breiman_statistical_modeling.pdf)
+
+## 
+
+Notes & Review
+
+Add your detailed notes, summaries, or critical reviews of the Breiman article here. This section is perfect for tracking your thoughts for future reference or exams.
+
+<br><br>
+
+**Disclosure:** I utilized **Gemini 3 Flash** for technical assistance with Quarto website formatting and file structure; however, all intellectual content and writing in the "Notes & Review" section are my own original work.

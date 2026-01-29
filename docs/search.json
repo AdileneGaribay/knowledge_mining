@@ -61,5 +61,26 @@
     "title": "Quantitative Methods: Lecture Notes",
     "section": "",
     "text": "Notes and methodologies for Social Data Analytics quantitative research."
+  },
+  {
+    "objectID": "assigned_reading.html",
+    "href": "assigned_reading.html",
+    "title": "Assigned Reading- Breiman",
+    "section": "",
+    "text": "Reading Material\n{{&lt; fa file-pdf &gt;}} Click here to download/view the article: Breiman - Statistical Modeling"
+  },
+  {
+    "objectID": "assigned_reading.html#section",
+    "href": "assigned_reading.html#section",
+    "title": "Assigned Reading- Breiman",
+    "section": "",
+    "text": "Reading Material\n{{&lt; fa file-pdf &gt;}} Click here to download/view the article: Breiman - Statistical Modeling"
+  },
+  {
+    "objectID": "assigned_reading.html#section-1",
+    "href": "assigned_reading.html#section-1",
+    "title": "Assigned Reading- Breiman",
+    "section": "",
+    "text": "Notes & Review\nAdd your detailed notes, summaries, or critical reviews of the Breiman article here. This section is perfect for tracking your thoughts for future reference or exams.\n\nDisclosure: I utilized Gemini 3 Flash for technical assistance with Quarto website formatting and file structure; however, all intellectual content and writing in the “Notes & Review” section are my own original work."
   }
 ]

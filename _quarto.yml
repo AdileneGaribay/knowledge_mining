@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - syllabi/
+    - pdfs/  # Added this so your PDF folder is included in the build
 
 website:
   title: "Graduate Work Product"
@@ -20,10 +21,8 @@ website:
           - href: knowledge_mining_notes.qmd
             text: "--- Lecture Notes"
           - text: "--- Assignments"
-#          - href: assignment_1.qmd
-#            text: " - Assignment 1"
-#          - href: assignment_2.qmd
-#            text: " - Assignment 2"
+          - href: assigned_reading.qmd # Added this link
+            text: " - Assigned Reading"
           - text: "---"
           - text: "QUANTITATIVE METHODS"
           - href: syllabi/quantitative_methods_syllabus.pdf
