@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - syllabi/
 
 website:
   title: "Graduate Work Product"
@@ -13,23 +15,28 @@ website:
       - text: Coursework
         menu:
           - text: "KNOWLEDGE MINING"
+          - href: syllabi/knowledge_mining_syllabus.pdf
+            text: "--- Syllabus"
           - href: knowledge_mining_notes.qmd
             text: "--- Lecture Notes"
           - text: "--- Assignments"
-          - href: assignment_1.qmd
-            text: "    - Assignment 1"
-          - href: assignment_2.qmd
-            text: "    - Assignment 2"
+#          - href: assignment_1.qmd
+#            text: " - Assignment 1"
+#          - href: assignment_2.qmd
+#            text: " - Assignment 2"
           - text: "---"
+          - text: "QUANTITATIVE METHODS"
+          - href: syllabi/quantitative_methods_syllabus.pdf
+            text: "--- Syllabus"
           - href: quantitative_methods.qmd
-            text: "Quantitative Methods Notes"
+            text: "--- Lecture Notes"
     right:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining
 
-  page-footer:
-    left: "Adilene Garibay | MS in Social Data Analytics"
-    right: "Technical assistance provided by Gemini 1.5 Flash"
+page-footer:
+  left: "Adilene Garibay | MS in Social Data Analytics"
+  right: "Technical assistance provided by Gemini"
 
 format:
   html:
