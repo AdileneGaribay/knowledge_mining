@@ -2,15 +2,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Adilene Garibay Website",
+    "title": "Adilene Garibay",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
-    "title": "Adilene Garibay Website",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome! This site serves as a digital portfolio for my graduate work product. Here, I document my journey through the Social Data Analytics and Research program, focusing on the intersection of data science, social patterns, and actionable insights.\nAbout Me\nI am a graduate student currently exploring the world of Knowledge Mining, NLP, and predictive modeling. My goal is to leverage data-driven methodologies to solve complex social problems.\nFeatured Coursework\n\nKnowledge Mining\nExploring the DIKW hierarchy, neural extraction methods, and the “AI for Science” paradigm to transform raw data into actionable insights.\n\n\nData Collection Methods\nFocusing on the systematic gathering of social data, survey design, and ensuring data integrity for robust research outcomes.\n\n\nData Visualization\nTranslating complex data sets into intuitive, high-impact visual narratives to aid in decision-making and public communication.\nContact\n\nGitHub: AdileneGaribay\nEmail: dal661311@utdallas.edu\n\n\nThis website was developed as part of my graduate coursework. Technical assistance and structural guidance were provided by Gemini 1.5 Flash (LLM)."
   }
 ]

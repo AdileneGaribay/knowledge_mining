@@ -1,17 +1,44 @@
 project:
   type: website
-  output-dir: docs  
+  output-dir: docs
 
 website:
-  title: "My Knowledge Mining Journey"
+  title: "Knowledge Mining"
+  search: true
   navbar:
+    background: primary
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - text: Coursework
+        menu:
+          - href: knowledge_mining_directory.qmd
+            text: "Intro to Knowledge Mining"
+    right:
+      - icon: github
+        href: https://github.com/AdileneGaribay/knowledge_mining
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
+    mainfont: "Inter, system-ui, -apple-system, sans-serif"
+    fontsize: "1.1rem"
+    # This custom CSS makes headers clean and professional
+    include-in-header:
+      text: |
+        <style>
+        h1, h2, h3 {
+          font-weight: 400 !important; /* Removes bold */
+          color: #2c3e50;
+        }
+        h2 {
+          font-size: 1.35rem !important; /* Slightly larger than body */
+          margin-top: 1.5rem;
+        }
+        h3 {
+          font-size: 1.15rem !important; /* Just a tiny bit larger than body */
+        }
+        </style>
     toc: true
+    toc-location: right
+    code-fold: true
