@@ -18,25 +18,44 @@ website:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining
 
+  page-footer:
+    left: "Adilene Garibay | MS in Social Data Analytics"
+    right: "Technical assistance provided by Gemini 1.5 Flash"
+
 format:
   html:
     theme: flatly
     mainfont: "Inter, system-ui, -apple-system, sans-serif"
     fontsize: "1.1rem"
-    # This custom CSS makes headers clean and professional
+    date-modified: last-modified
+    language:
+      en:
+        section-title-modified: "Last Updated"
+    # Custom CSS for a clean, non-bold professional look
     include-in-header:
       text: |
         <style>
         h1, h2, h3 {
-          font-weight: 400 !important; /* Removes bold */
+          font-weight: 400 !important;
           color: #2c3e50;
         }
         h2 {
-          font-size: 1.35rem !important; /* Slightly larger than body */
+          font-size: 1.35rem !important;
           margin-top: 1.5rem;
         }
         h3 {
-          font-size: 1.15rem !important; /* Just a tiny bit larger than body */
+          font-size: 1.15rem !important;
+        }
+        /* Styling the 'Last Updated' text to be subtle */
+        .quarto-title-meta-heading {
+          font-size: 0.8rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #7f8c8d;
+        }
+        .quarto-title-meta-contents {
+          font-size: 0.8rem;
+          color: #7f8c8d;
         }
         </style>
     toc: true
