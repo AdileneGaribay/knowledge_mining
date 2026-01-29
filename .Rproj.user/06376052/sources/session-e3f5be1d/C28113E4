@@ -1,14 +1,14 @@
 {
-    "id": "2AB81A04",
-    "path": "~/Documents/knowledge_mining_website/knowledge_mining_directory/knowledge_mining_notes.qmd",
-    "project_path": "knowledge_mining_notes.qmd",
+    "id": "C28113E4",
+    "path": "~/Documents/knowledge_mining_website/knowledge_mining_directory/quantitative_methods.qmd",
+    "project_path": "quantitative_methods.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2109317805",
     "contents": "",
     "dirty": false,
-    "created": 1769662197974.0,
+    "created": 1769664571586.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 4,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -17,16 +17,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "5,0",
+        "cursorPosition": "0,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "65:0"
+        "rmdVisualModeLocation": "49:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1769665666,
+    "lastKnownWriteTime": 1769665566,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1769665666702,
+    "last_content_update": 1769665566241,
     "read_only": false,
     "read_only_alternatives": []
 }
