@@ -3,6 +3,18 @@ title: "Quantitative Methods: Lecture Notes"
 format: html
 ---
 
-## Course Overview
+## 
 
 Notes and methodologies for Social Data Analytics quantitative research.
+
+### Wheelan Ch. 1 "What's the Point?"
+
+Description and Comparison
+
+Inference
+
+Assessing Risk and Other Probability-Related Events
+
+Identifying Important Relationships (Statistical Detective Work)
+
+Lies, Damned Lies, and Statistics

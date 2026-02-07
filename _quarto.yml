@@ -3,7 +3,8 @@ project:
   output-dir: docs
   resources:
     - syllabi/
-    - pdfs/  # Added this so your PDF folder is included in the build
+    - pdfs/
+    - assignment_1_files/ # This ensures the HTML, Lab folders, and assets are moved to docs
 
 website:
   title: "Graduate Work Product"
@@ -20,9 +21,15 @@ website:
             text: "--- Syllabus"
           - href: knowledge_mining_notes.qmd
             text: "--- Lecture Notes"
-          - text: "--- Assignments"
-          - href: assigned_reading.qmd # Added this link
-            text: " - Assigned Reading"
+          - text: "---"
+          - text: "ASSIGNMENT 1" 
+          - href: assignment_1_files/Lab01.html
+            text: "   Lab 01: Report"
+          - href: assignment_1_files/Lab02.html
+            text: "   Lab 02: Report"
+          - text: "---"
+          - href: assigned_reading.qmd
+            text: "Assigned Reading"
           - text: "---"
           - text: "QUANTITATIVE METHODS"
           - href: syllabi/quantitative_methods_syllabus.pdf
