@@ -21,3 +21,7 @@ date: "2026-02-17"
 ## Prompt to combine the reponses: Using these drafts from three AI models, produce a 2,000-word structured systematic literature review on data mining and machine learning applications. Combine the strongest methodology, findings, trends, gaps, and hypothesis into a cohesive, academically sound document. 
 
 ## Results: 
+```{r, results='asis'}
+cat('<a href="systematic_literature_review_Final.pdf" target="_blank">📄 Download Systematic Literature Review</a>')
+```
+
