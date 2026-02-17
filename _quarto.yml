@@ -5,6 +5,8 @@ project:
     - syllabi/
     - pdfs/
     - assignment_1_files/ # This ensures the HTML, Lab folders, and assets are moved to docs
+    - assignment_2_files/
+    - Assignment 2/
 
 website:
   title: "Graduate Work Product"
@@ -28,6 +30,10 @@ website:
           - href: assignment_1_files/Lab02.html
             text: "   Lab 02: Report"
           - text: "---"
+          - text: "ASSIGNMENT 2"
+          - href: Assignment 2/assignment_2.html
+            text: "   Systematic Literature Review"
+          - text: "---"
           - href: assigned_reading.qmd
             text: "Assigned Reading"
           - text: "---"
@@ -39,11 +45,9 @@ website:
     right:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining
-
 page-footer:
   left: "Adilene Garibay | MS in Social Data Analytics"
   right: "Technical assistance provided by Gemini"
-
 format:
   html:
     theme: flatly

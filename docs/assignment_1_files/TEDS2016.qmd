@@ -1,0 +1,53 @@
+---
+title: "Assignment 1 TEDS2016"
+format: html
+editor: visual
+---
+
+```{r}
+library(haven)
+TEDS_2016<-
+  read_stata("https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true")
+library(labelled)
+```
+
+## Exploratory Analysis on Data
+
+```{r}
+dim(TEDS_2016)
+str(TEDS_2016)
+head(TEDS_2016)
+summary(TEDS_2016) #variables with large quantities of NA's: votekm-1, votedpp_1,votekmt_nm,highincome,income_nm,votesai_all,votetsai,votesai_nm
+sum(is.na(TEDS_2016)) #there is a total of 3008 missing values.
+
+```
+
+## Taking Care of Missing Values
+
+```{r}
+TEDS_2016 <- user_na_to_na(TEDS_2016)
+# Targeted removal: Keep rows where essential columns are not NA
+TEDS_clean <- TEDS_2016[!is.na(TEDS_2016$Tondu) & !is.na(TEDS_2016$votetsai), ]
+```
+
+## Exploring the Relationships
+
+```{r}
+TEDS_2016<-user_na_to_na(TEDS_2016)
+TEDS_2016$Tondu_factor <- factor(TEDS_2016$Tondu, 
+                                 levels = 1:7, 
+                                 labels = c("Unification now", 
+                                            "Status quo, unif. in future", 
+                                            "Status quo, decide later", 
+                                            "Status quo forever", 
+                                            "Status quo, indep. in future", 
+                                            "Independence now", 
+                                            "No response"),
+                                 exclude = NULL)
+tondu_table <- table(TEDS_2016$Tondu_factor, useNA = "ifany")
+print(tondu_table)
+barplot(tondu_table, 
+        main = "Attitudes Toward Unification/Independence",
+        las = 2, # Makes axis labels perpendicular to axis
+        cex.names = 0.5) # Shrinks label size to fit
+```

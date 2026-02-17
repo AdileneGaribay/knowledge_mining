@@ -1,0 +1,23 @@
+---
+title: "Assignment 2"
+output: html_document
+date: "2026-02-17"
+---
+
+## Prompt
+"Conduct a 2,000-word structured systematic literature review on the applications of data mining and machine learning in real-world domains. Include a methodology section, synthesize key findings, identify trends and gaps, and propose one testable hypothesis. Use an academic tone and emulate systematic review standards"
+
+### ChatGPT
+- Using the original prompt on ChatGPT yields a response that has no sources listed. It is also very concise in its findings of machine learning in real-world domains. For the next prompt, I requested that the citations be added ""Provide sources in APA"". Then, I inputted the following prompt, "Provide summaries for the findings section. Avoid using bullet points.". This prompt yielded summaries for each finding as opposed to giving oversimplified bullet points of the findings. ChatGPT does include gaps in the research & proposes a testable hypothesis. I checked the citations provided on Google Scholar and they were all existing works. Thus, there was no "hallucinated" reference. 
+
+### Gemini
+- Gemini listed sources, however, they are not in the correct formatt. It also exludes in-text citation. In contrast to ChatGPT, it offers more analysis on the applications across different domains. 
+
+### Claude
+- Claude offers the most comprehensive and structurally accurate response. It includes sources, but not in the correct formatt nor does it offer in-text citations. 
+
+##Updated Prompt:I am a Data Science Graduate Student interested in data mining and machine learning. Conduct a 2,000-word structured systematic literature review on the applications of data mining and machine learning in real-world domains. Include a methodology section, synthesize key findings, identify trends and gaps, and propose one testable hypothesis. Use an academic tone and emulate systematic review standards. Use Actual reference details should be drawn from the literature search conducted in the methodology. Make this in APSA formatted reference list, and with in-text citations integrated into a full paper draft. Include all primary studies selected for analysis in reference list. Convert this draft into APA
+
+## Prompt to combine the reponses: Using these drafts from three AI models, produce a 2,000-word structured systematic literature review on data mining and machine learning applications. Combine the strongest methodology, findings, trends, gaps, and hypothesis into a cohesive, academically sound document. 
+
+## Results: 
