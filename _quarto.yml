@@ -7,6 +7,7 @@ project:
     - assignment_1_files/ # This ensures the HTML, Lab folders, and assets are moved to docs
     - assignment_2_files/
     - Assignment 2/
+    - past_work/
 
 website:
   title: "Graduate Work Product"
@@ -24,7 +25,7 @@ website:
           - href: knowledge_mining_notes.qmd
             text: "--- Lecture Notes"
           - text: "---"
-          - text: "ASSIGNMENT 1" 
+          - text: "ASSIGNMENT 1"
           - href: assignment_1_files/Lab01.html
             text: "   Lab 01: Report"
           - href: assignment_1_files/Lab02.html
@@ -42,12 +43,23 @@ website:
             text: "--- Syllabus"
           - href: quantitative_methods.qmd
             text: "--- Lecture Notes"
+      - text: "Past Work"
+        menu:
+          - text: "FALL 2025 WORK PRODUCT"
+          - href: past_work/assgn3.qmd
+            text: "--- Data Methods of Data Collection and Production Work Product"
+          - href: past_work/hackathon.qmd
+            text: "--- Data Visualization Work Product"
+          - href: past_work/assignment5DV.qmd
+            text: "--- Data Visualization Work Product"
     right:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining
+
 page-footer:
   left: "Adilene Garibay | MS in Social Data Analytics"
   right: "Technical assistance provided by Gemini"
+
 format:
   html:
     theme: flatly

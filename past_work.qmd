@@ -1,0 +1,9 @@
+---
+title: "Past Work"
+---
+
+## Fall 2025 Work Product
+
+- [Data Methods of Data Collection and Production Work Product](past_work/assgn3.qmd)
+- [Data Visualization Work Product](past_work/hackathon.qmd)
+- [Data Visualization Work Product](past_work/assignment5DV.qmd)

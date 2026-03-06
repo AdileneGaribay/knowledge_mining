@@ -1,0 +1,21 @@
+---
+title: "Assignment 3 Instructions"
+editor: visual
+---
+
+## Chloropleth map of median income
+
+Here is a map showing median household income by tract in Texas:
+
+![Median Income Map](images/income_map.png) njj ##Poverty Table: Top and Bototm 10 Tracts
+
+```{r}
+## 📋 Poverty Table: Top and Bottom 10 Tracts
+
+library(readr)
+library(knitr)
+
+poverty_table <- read_csv("data/poverty_table.csv")
+kable(poverty_table, caption = "Top and Bottom 10 Tracts by Poverty Estimate")
+
+```

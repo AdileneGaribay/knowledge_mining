@@ -1,0 +1,123 @@
+---
+title: "Assignment 5 Data Visualization"
+format: html
+editor: visual
+---
+
+```{r}
+setwd("/Users/adilenegaribay/Dropbox/Quarto/adilenegaribay.github.io")
+## histogram
+data(mtcars)
+par(bg="gray")
+hist(mtcars$mpg,
+     main = "Histogram of Miles Per Gallon",
+     xlab = "Miles Per Gallon (mpg)",
+     ylab = "Frequency",
+     col = "darkgray",
+     border = "deeppink3")
+## barchart 
+data(mtcars)
+cyl_freq <- table(mtcars$cyl)
+par(bg = "gray")
+barplot(cyl_freq,
+        main = "Vertical Bar Chart of Cylinder Counts",
+        xlab = "Number of Cylinders",
+        ylab = "Frequency",
+        col = "darkgray",
+        border = "deeppink3")
+barplot(cyl_freq,
+        main = "Horizontal Bar Chart of Cylinder Counts",
+        xlab = "Frequency",
+        ylab = "Number of Cylinders",
+        col = "darkgray",
+        border = "deeppink3",
+        horiz = TRUE)
+## piechart
+data(mtcars)
+cyl_freq <- table(mtcars$cyl)
+par(bg = "gray")
+pie(cyl_freq,
+    main = "Pie Chart of Cylinder Counts",
+    col = c("lightblue", "lightgreen", "lightpink"),
+    border = "white")
+## boxplot
+data(mtcars)
+par(bg = "gray")
+boxplot(mpg ~ cyl,
+        data = mtcars,
+        main = "Boxplot of MPG by Cylinder Count",
+        xlab = "Number of Cylinders",
+        ylab = "Miles Per Gallon (mpg)",
+        col = "darkgray",
+        border = "deeppink3")
+
+## scatterplot
+data(mtcars)
+par(bg = "gray95")
+plot(mtcars$hp, mtcars$mpg,
+     main = "Scatter Plot of MPG vs Horsepower",
+     xlab = "Horsepower (hp)",
+     ylab = "Miles Per Gallon (mpg)",
+     col = "deeppink3",
+     pch = 20)
+## ggplot2 graphs
+library(ggplot2) 
+data(mtcars)
+##histogram
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(binwidth = 2, fill = "darkgray", color = "deeppink3") +
+  labs(title = "Histogram of Miles Per Gallon",
+       x = "Miles Per Gallon (mpg)",
+       y = "Frequency") +
+  theme_minimal(base_family = "sans") +
+  theme(panel.background = element_rect(fill = "gray"))
+## barcharts
+ggplot(mtcars, aes(x = factor(cyl))) +
+  geom_bar(fill = "darkgray", color = "deeppink3") +
+  labs(title = "Vertical Bar Chart of Cylinder Counts",
+       x = "Number of Cylinders",
+       y = "Frequency") +
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = "gray"))
+ggplot(mtcars, aes(x = factor(cyl))) +
+  geom_bar(fill = "darkgray", color = "deeppink3") +
+  coord_flip() +
+  labs(title = "Horizontal Bar Chart of Cylinder Counts",
+       x = "Number of Cylinders",
+       y = "Frequency") +
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = "gray"))
+## piechart 
+cyl_freq <- as.data.frame(table(mtcars$cyl))
+colnames(cyl_freq) <- c("cyl", "freq")
+
+ggplot(cyl_freq, aes(x = "", y = freq, fill = factor(cyl))) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar("y") +
+  labs(title = "Pie Chart of Cylinder Counts", fill = "Cylinders") +
+  theme_void() +
+  theme(panel.background = element_rect(fill = "gray"))
+#. boxplot
+ggplot(mtcars, aes(x = factor(cyl), y = mpg)) +
+  geom_boxplot(fill = "darkgray", color = "deeppink3") +
+  labs(title = "Boxplot of MPG by Cylinder Count",
+       x = "Number of Cylinders",
+       y = "Miles Per Gallon (mpg)") +
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = "gray"))
+## scatterplot
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point(color = "deeppink3", size = 2) +
+  labs(title = "Scatter Plot of MPG vs Horsepower",
+       x = "Horsepower (hp)",
+       y = "Miles Per Gallon (mpg)") +
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = "gray"))
+```
+
+\
+\
+\
+\
+\
+\

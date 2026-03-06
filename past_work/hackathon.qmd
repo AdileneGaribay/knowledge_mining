@@ -1,0 +1,116 @@
+---
+title: "Hackathon"
+format: html
+editor: visual
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+data("iris")
+iris_summary <- aggregate(cbind(Sepal.Width, Petal.Length) ~ Species, data = iris, FUN = mean)
+
+iris_summary <- iris_summary %>%
+  mutate(NormWidth = (Sepal.Width / sum(Sepal.Width))^3 * 10)
+
+ggplot(iris_summary, aes(x = Species, y = Petal.Length)) +
+  geom_col(aes(width = NormWidth, fill = Species), color = "black", linewidth = 0.3) +
+  geom_text(aes(label = round(Petal.Length, 2)), vjust = -0.5, size = 4, family = "mono") +
+  geom_text(aes(label = round(Sepal.Width, 2)), vjust = 1.5, size = 3.5, family = "mono", color = "white") +
+  scale_fill_manual(values = c(
+    setosa = "#1f77b4",
+    versicolor = "#4fa9dc",
+    virginica = "#a6cee3"
+  )) +
+  labs(
+    title = "Variable-Width Column Chart: Iris Species",
+    subtitle = "Bar height = Avg. Petal Length, Bar width = (normalized Avg. Sepal Width)³ × 10",
+    x = "Species (bar width ∝ cubed mean Sepal Width)",
+    y = "Average Petal Length"
+  ) +
+  theme_classic(base_family = "mono") +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(size = 12),
+    plot.subtitle = element_text(size = 10)
+  )
+
+```
+
+```{r}
+library(ggplot2)
+d <- reshape(aggregate(cbind(Sepal.Length, Sepal.Width, Petal.Length, Petal.Width) ~ Species, iris, mean),
+             list(2:5), v.names = "Value", timevar = "Feature", times = names(iris)[1:4], direction = "long")
+ggplot(d, aes(Species, Value, fill = Feature)) +
+  geom_col(width = 0.6) +
+  geom_text(aes(label = round(Value, 2)), vjust = -1.2, size = 1.5, family = "mono", fontface = "bold", color = "black") +
+  facet_grid(Feature ~ .) +
+  scale_y_continuous(expand = expansion(mult = c(0.05, 0.2))) +
+  scale_fill_manual(values = c(Sepal.Length = "#1f77b4", Sepal.Width = "#4fa9dc", Petal.Length = "#a6cee3", Petal.Width = "#c6dbef")) +
+  labs(title = "Chart #2: Matrix Table with Embedded Bar Charts — Iris Feature Averages", x = "Species", y = "Average Value", fill = "Feature") +
+  theme_minimal(base_family = "sans") +
+  theme(strip.text = element_text(face = "bold", size = 5.5), axis.text.x = element_text(face = "bold", size = 10),
+        axis.title.x = element_text(face = "bold"), axis.title.y = element_text(face = "bold"),
+        panel.grid.major = element_line(color = "gray85"), panel.grid.minor = element_blank(),
+        panel.spacing.y = unit(1.2, "lines"), plot.margin = margin(10, 10, 10, 10),
+        legend.position = "top", legend.title = element_text(face = "bold"), legend.text = element_text(size = 10))
+
+```
+
+```{r}
+library(ggplot2)
+data("iris")
+d <- aggregate(cbind(Sepal.Width, Petal.Length) ~ Species, iris, mean)
+d_long <- reshape(d, varying = list(names(d)[2:3]), v.names = "Value",
+                  timevar = "Variable", times = names(d)[2:3], direction = "long")
+ggplot(d_long, aes(x = Value, y = Species, fill = Variable)) +
+  geom_col(position = position_dodge(0.7), width = 0.6) +
+  geom_text(aes(label = round(Value, 2)), position = position_dodge(0.7),
+            hjust = -0.2, size = 3.5, family = "mono", fontface = "bold", color = "black") +
+  scale_fill_manual(values = c(Sepal.Width = "#a6cee3", Petal.Length = "#1f77b4")) +
+  labs(title = "Chart #3: Horizontal Grouped Bar Chart", x = "Average Value", y = NULL) +
+  coord_cartesian(clip = "off") +
+  theme_minimal(base_family = "sans") +
+  theme(axis.text.y = element_text(face = "bold", size = 11),
+        axis.title.x = element_text(face = "bold"),
+        legend.title = element_blank(),
+        legend.position = "top",
+        plot.margin = margin(10, 30, 10, 10),
+        panel.grid.major.y = element_blank())
+
+```
+
+```{r}
+library(ggplot2); data("iris")
+
+d <- aggregate(cbind(Sepal.Width, Petal.Length) ~ Species, iris, mean)
+d <- reshape(d, list(2:3), v.names = "Value", timevar = "Variable",
+             times = names(d)[2:3], direction = "long")
+d$Layer <- d$Variable
+
+ggplot(d, aes(x = Species, y = Value, fill = Layer)) +
+  geom_col(position = position_nudge(x = ifelse(d$Layer == "Sepal.Width", -0.15, 0.15)),
+           width = 0.5, alpha = ifelse(d$Layer == "Sepal.Width", 0.6, 1)) +
+  geom_text(aes(label = round(Value, 2)),
+            position = position_nudge(x = ifelse(d$Layer == "Sepal.Width", -0.15, 0.15)),
+            vjust = -0.5, size = 3.5, family = "mono", fontface = "bold", color = "black") +
+  scale_fill_manual(values = c(Sepal.Width = "#1f77b4", Petal.Length = "#a6cee3")) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  coord_cartesian(clip = "off") +
+  labs(title = "Chart #4: Layered Column Chart — Sepal vs Petal", x = NULL, y = "Average Value", fill = "Feature") +
+  theme_minimal(base_family = "sans") +
+  theme(axis.text.x = element_text(face = "bold", size = 11),
+        axis.title.y = element_text(face = "bold"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "top",
+        legend.title = element_text(face = "bold"),
+        legend.text = element_text(size = 10),
+        plot.margin = margin(t = 20, r = 10, b = 10, l = 10))
+```
+
+AI Disclaimer
+
+This project was developed with support from Microsoft Copilot, an AI companion that assisted in refining code, customizing chart aesthetics, and troubleshooting layout and labeling issues. Copilot was used to:
+
+• Optimize R code for data visualization using ggplot2 • Troubleshoot axis labeling, legend placement, and bar layering • Refactor code for compactness and reproducibility • Align chart titles and styles with assignment specifications All visualizations were reviewed and iteratively refined by the author to ensure clarity, accuracy, and alignment with project goals.
