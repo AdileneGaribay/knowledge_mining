@@ -52,6 +52,12 @@ website:
             text: "--- Data Visualization Work Product"
           - href: past_work/assignment5DV.qmd
             text: "--- Data Visualization Work Product"
+          - text: "---"
+          - text: "GROUP PROJECTS"
+          - href: pdfs/Final_Presentation_R0.pdf
+            text: "--- Mapping Civic Inequality in Texas"
+          - href: pdfs/Team_Campos_Final_Presentation.pdf
+            text: "--- Mapping Urban Development & Gentrification in Dallas, TX"
     right:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining

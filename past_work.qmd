@@ -7,3 +7,8 @@ title: "Past Work"
 - [Data Methods of Data Collection and Production Work Product](past_work/assgn3.qmd)
 - [Data Visualization Work Product](past_work/hackathon.qmd)
 - [Data Visualization Work Product](past_work/assignment5DV.qmd)
+
+## Group Projects
+
+- [Mapping Civic Inequality in Texas: Gardens and Deserts of Democratic Engagement](pdfs/Final_Presentation_R0.pdf)
+- [Mapping Urban Development & Gentrification in Dallas, TX](pdfs/Team_Campos_Final_Presentation.pdf)
