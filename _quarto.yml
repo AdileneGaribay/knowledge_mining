@@ -35,10 +35,6 @@ website:
           - href: Assignment 2/assignment_2.html
             text: "   Systematic Literature Review"
           - text: "---"
-          - text: "GROUP PROJECT"
-          - href: project_schedule.qmd
-            text: "--- Project Schedule & Resources"
-          - text: "---"
           - href: assigned_reading.qmd
             text: "Assigned Reading"
           - text: "---"
@@ -62,6 +58,10 @@ website:
             text: "--- Mapping Civic Inequality in Texas"
           - href: pdfs/Team_Campos_Final_Presentation.pdf
             text: "--- Mapping Urban Development & Gentrification in Dallas, TX"
+      - text: "Group Project Spring 2026"
+        menu:
+          - href: project_schedule.qmd
+            text: "--- Project Schedule & Resources"
     right:
       - icon: github
         href: https://github.com/AdileneGaribay/knowledge_mining
