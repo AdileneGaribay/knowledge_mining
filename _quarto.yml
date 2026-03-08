@@ -40,4 +40,5 @@ website:
           - text: "---"
           - text: "QUANTITATIVE METHODS"
           - href: syllabi/quantitative_methods_syllabus.pdf
-            text:
+            text: "--- Syllabus"
+          - href: quantitative_meth

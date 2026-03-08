@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-33042ce356e75f275e6de0b8c71cd0b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0fd445826db4cc1007072b2af7a3b60c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,34 +103,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<style>
-h1, h2, h3 {
-  font-weight: 400 !important;
-  color: #2c3e50;
-}
-h2 {
-  font-size: 1.35rem !important;
-  margin-top: 1.5rem;
-}
-h3 {
-  font-size: 1.15rem !important;
-}
-.quarto-title-meta-heading {
-  font-size: 0.8rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #7f8c8d;
-}
-.quarto-title-meta-contents {
-  font-size: 0.8rem;
-  color: #7f8c8d;
-}
-</style>
 
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -195,48 +172,11 @@ h3 {
  <span class="dropdown-text">— Syllabus</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../quantitative_methods.html">
- <span class="dropdown-text">— Lecture Notes</span></a>
+    <a class="dropdown-item" href="../quantitative_meth">
+ <span class="dropdown-text"></span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-past-work" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Past Work</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-past-work">    
-        <li class="dropdown-header">FALL 2025 WORK PRODUCT</li>
-        <li>
-    <a class="dropdown-item" href="../past_work/assgn3.html">
- <span class="dropdown-text">— Data Methods of Data Collection and Production Work Product</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../past_work/hackathon.html">
- <span class="dropdown-text">— Data Visualization Work Product</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../past_work/assignment5DV.html">
- <span class="dropdown-text">— Data Visualization Work Product</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li class="dropdown-header">GROUP PROJECTS</li>
-        <li>
-    <a class="dropdown-item" href="../pdfs/Final_Presentation_R0.pdf">
- <span class="dropdown-text">— Mapping Civic Inequality in Texas</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../pdfs/Team_Campos_Final_Presentation.pdf">
- <span class="dropdown-text">— Mapping Urban Development &amp; Gentrification in Dallas, TX</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/AdileneGaribay/knowledge_mining"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -248,17 +188,7 @@ h3 {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#exploratory-analysis-on-data" id="toc-exploratory-analysis-on-data" class="nav-link active" data-scroll-target="#exploratory-analysis-on-data">Exploratory Analysis on Data</a></li>
-  <li><a href="#taking-care-of-missing-values" id="toc-taking-care-of-missing-values" class="nav-link" data-scroll-target="#taking-care-of-missing-values">Taking Care of Missing Values</a></li>
-  <li><a href="#exploring-the-relationships" id="toc-exploring-the-relationships" class="nav-link" data-scroll-target="#exploring-the-relationships">Exploring the Relationships</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -273,12 +203,6 @@ h3 {
 
     
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 17, 2026</p>
-    </div>
-  </div>
     
   </div>
   
@@ -288,28 +212,19 @@ h3 {
 
 
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>TEDS_2016<span class="ot">&lt;-</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_stata</span>(<span class="st">"https://github.com/datageneration/home/blob/master/DataProgramming/data/TEDS_2016.dta?raw=true"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(labelled)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 <section id="exploratory-analysis-on-data" class="level2">
 <h2 class="anchored" data-anchor-id="exploratory-analysis-on-data">Exploratory Analysis on Data</h2>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(TEDS_2016)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1690   54</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(TEDS_2016)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>tibble [1,690 × 54] (S3: tbl_df/tbl/data.frame)
  $ District       : dbl+lbl [1:1690] 201, 201, 201, 201, 201, 201, 201, 201, 201, 201, 201...
@@ -461,10 +376,7 @@ h3 {
  $ votekmt_1      : num [1:1690] NA 0 1 NA NA 0 0 0 0 0 ...
   ..- attr(*, "format.stata")= chr "%9.0g"</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(TEDS_2016)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 54
   District      Sex     Age     Edu     Arear   Career  Career8 Ethnic  Party   
@@ -483,10 +395,7 @@ h3 {
 #   DPP &lt;dbl&gt;, npp &lt;dbl&gt;, noparty &lt;dbl&gt;, pfp &lt;dbl&gt;, South &lt;dbl&gt;, north &lt;dbl&gt;,
 #   Minnan_father &lt;dbl&gt;, Mainland_father &lt;dbl&gt;, Econ_worse &lt;dbl&gt;, …</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(TEDS_2016) <span class="co">#variables with large quantities of NA's: votekm-1, votedpp_1,votekmt_nm,highincome,income_nm,votesai_all,votetsai,votesai_nm</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    District         Sex             Age           Edu            Arear      
  Min.   : 201   Min.   :1.000   Min.   :1.0   Min.   :1.000   Min.   :1.000  
@@ -593,10 +502,7 @@ h3 {
  Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
                   NA's   :429      NA's   :187      NA's   :187     </code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(TEDS_2016)) <span class="co">#there is a total of 3008 missing values.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3008</code></pre>
 </div>
@@ -605,19 +511,14 @@ h3 {
 <section id="taking-care-of-missing-values" class="level2">
 <h2 class="anchored" data-anchor-id="taking-care-of-missing-values">Taking Care of Missing Values</h2>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016 <span class="ot">&lt;-</span> <span class="fu">user_na_to_na</span>(TEDS_2016)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Targeted removal: Keep rows where essential columns are not NA</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>TEDS_clean <span class="ot">&lt;-</span> TEDS_2016[<span class="sc">!</span><span class="fu">is.na</span>(TEDS_2016<span class="sc">$</span>Tondu) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(TEDS_2016<span class="sc">$</span>votetsai), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 </section>
 <section id="exploring-the-relationships" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-the-relationships">Exploring the Relationships</h2>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>TEDS_2016<span class="ot">&lt;-</span><span class="fu">user_na_to_na</span>(TEDS_2016)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>TEDS_2016<span class="sc">$</span>Tondu_factor <span class="ot">&lt;-</span> <span class="fu">factor</span>(TEDS_2016<span class="sc">$</span>Tondu, </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">levels =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, </span>
@@ -631,7 +532,6 @@ h3 {
 <span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">exclude =</span> <span class="cn">NULL</span>)</span>
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>tondu_table <span class="ot">&lt;-</span> <span class="fu">table</span>(TEDS_2016<span class="sc">$</span>Tondu_factor, <span class="at">useNA =</span> <span class="st">"ifany"</span>)</span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tondu_table)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
              Unification now  Status quo, unif. in future 
@@ -643,13 +543,10 @@ Status quo, indep. in future             Independence now
                  No response                         &lt;NA&gt; 
                            0                          121 </code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(tondu_table, </span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">"Attitudes Toward Unification/Independence"</span>,</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>, <span class="co"># Makes axis labels perpendicular to axis</span></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex.names =</span> <span class="fl">0.5</span>) <span class="co"># Shrinks label size to fit</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
