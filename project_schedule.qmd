@@ -1,0 +1,57 @@
+---
+title: "EPPS 6323 - Group Project Schedule"
+---
+
+## Project Resources
+
+[Literature Review](https://cometmail-my.sharepoint.com/:f:/g/personal/dal661311_utdallas_edu/IgDz3nGSWxnISpGl_6Fh4HzLAalMjoUOwV3XSUvSLuGfhug?e=khboM1) \| [Data Analysis Repository](https://github.com/AdileneGaribay/epps6323-analysis) \| [AI Prompts](https://cometmail-my.sharepoint.com/:f:/g/personal/dal661311_utdallas_edu/IgC0OgTur_7uSa8w2Pt-0lEMAdmRceboQoQdlGZZW7mi2Gc?e=AFsf2a)
+
+------------------------------------------------------------------------
+
+## Project Schedule
+
+```{r}
+library(DT)
+
+schedule <- data.frame(
+  Task = c(
+    "Literature Review", "Source Compilation",
+    "Data Source Decision", "API Extraction", "Data Cleaning",
+    "TF-IDF Analysis", "Topic Modeling", "Sentiment Analysis",
+    "Methods Section", "Results Section", "Conclusion"
+  ),
+  Track = c(
+    "Literature", "Literature",
+    "Data/Analysis", "Data/Analysis", "Data/Analysis",
+    "Data/Analysis", "Data/Analysis", "Data/Analysis",
+    "Writing", "Writing", "Writing"
+  ),
+  Owner = c(
+    "Hatice & Susan", "Hatice & Susan",
+    "Full Team", "Mamie", "Mamie & Adilene",
+    "Mamie & Adilene", "Mamie & Adilene", "Mamie & Adilene",
+    "Adilene & Mamie", "Adilene & Mamie", "Susan & Hatice"
+  ),
+  Due_Date = c(
+    "April 12, 2026", "April 12, 2026",
+    "March 22, 2026", "April 5, 2026", "April 5, 2026",
+    "April 19, 2026", "April 19, 2026", "April 19, 2026",
+    "April 26, 2026", "April 26, 2026", "May 3, 2026"
+  ),
+  Status = c(
+    "Not Started", "Not Started", "Not Started", "Not Started", "Not Started",
+    "Not Started", "Not Started", "Not Started", "Not Started", "Not Started", "Not Started"
+  )
+)
+
+datatable(schedule,
+  filter = "top",
+  class = "stripe hover",
+  options = list(
+    pageLength = 15,
+    autoWidth = TRUE,
+    dom = "ftip"
+  ),
+  colnames = c("Task", "Track", "Owner", "Due Date", "Status")
+)
+```

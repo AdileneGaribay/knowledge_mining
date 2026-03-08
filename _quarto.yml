@@ -4,7 +4,7 @@ project:
   resources:
     - syllabi/
     - pdfs/
-    - assignment_1_files/ # This ensures the HTML, Lab folders, and assets are moved to docs
+    - assignment_1_files/
     - assignment_2_files/
     - Assignment 2/
     - past_work/
@@ -34,6 +34,10 @@ website:
           - text: "ASSIGNMENT 2"
           - href: Assignment 2/assignment_2.html
             text: "   Systematic Literature Review"
+          - text: "---"
+          - text: "GROUP PROJECT"
+          - href: project_schedule.qmd
+            text: "--- Project Schedule & Resources"
           - text: "---"
           - href: assigned_reading.qmd
             text: "Assigned Reading"
