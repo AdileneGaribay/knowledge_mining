@@ -27,10 +27,8 @@ Translating complex data sets into intuitive, high-impact visual narratives to a
 
 -   **GitHub:** [AdileneGaribay](https://github.com/AdileneGaribay)
 -   **Email:** dal661311\@utdallas.edu
--   **Resume:** [View Resume](pdfs/Garibay_Resume.pdf)
+-   **Resume:** [View Resume](pdfs/Garibay_Resume.pdf?v=2)
 
 <p style="font-size: 0.8rem; color: #7f8c8d; font-style: italic;">
-
 This website was developed as part of my graduate coursework. Technical assistance and structural guidance were provided by Gemini 1.5 Flash (LLM).
-
 </p>
