@@ -1,18 +1,12 @@
 ---
 title: "EPPS 6323 - Group Project Schedule"
 ---
-
 ## Project Resources
-
 [Literature Review](https://cometmail-my.sharepoint.com/:f:/g/personal/dal661311_utdallas_edu/IgDz3nGSWxnISpGl_6Fh4HzLAalMjoUOwV3XSUvSLuGfhug?e=khboM1) \| [Data Analysis Repository](https://github.com/AdileneGaribay/epps6323-analysis) \| [AI Prompts](https://cometmail-my.sharepoint.com/:f:/g/personal/dal661311_utdallas_edu/IgC0OgTur_7uSa8w2Pt-0lEMAdmRceboQoQdlGZZW7mi2Gc?e=AFsf2a)
-
 ------------------------------------------------------------------------
-
 ## Project Schedule
-
 ```{r}
 library(DT)
-
 schedule <- data.frame(
   Task = c(
     "Literature Review", "Source Compilation",
@@ -39,11 +33,10 @@ schedule <- data.frame(
     "April 26, 2026", "April 26, 2026", "May 3, 2026"
   ),
   Status = c(
-    "Not Started", "Not Started", "Not Started", "Not Started", "Not Started",
-    "Not Started", "Not Started", "Not Started", "Not Started", "Not Started", "Not Started"
+    "In Progress", "In Progress", "Complete", "In Progress", "In Progress",
+    "In Progress", "In Progress", "In Progress", "In Progress", "In Progress", "In Progress"
   )
 )
-
 datatable(schedule,
   filter = "top",
   class = "stripe hover",
