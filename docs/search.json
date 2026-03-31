@@ -46,7 +46,7 @@
     "href": "project_schedule.html#project-schedule",
     "title": "EPPS 6323 - Group Project Schedule",
     "section": "Project Schedule",
-    "text": "Project Schedule\n\n\nCode\nlibrary(DT)\n\nschedule &lt;- data.frame(\n  Task = c(\n    \"Literature Review\", \"Source Compilation\",\n    \"Data Source Decision\", \"API Extraction\", \"Data Cleaning\",\n    \"TF-IDF Analysis\", \"Topic Modeling\", \"Sentiment Analysis\",\n    \"Methods Section\", \"Results Section\", \"Conclusion\"\n  ),\n  Track = c(\n    \"Literature\", \"Literature\",\n    \"Data/Analysis\", \"Data/Analysis\", \"Data/Analysis\",\n    \"Data/Analysis\", \"Data/Analysis\", \"Data/Analysis\",\n    \"Writing\", \"Writing\", \"Writing\"\n  ),\n  Owner = c(\n    \"Hatice & Susan\", \"Hatice & Susan\",\n    \"Full Team\", \"Mamie\", \"Mamie & Adilene\",\n    \"Mamie & Adilene\", \"Mamie & Adilene\", \"Mamie & Adilene\",\n    \"Adilene & Mamie\", \"Adilene & Mamie\", \"Susan & Hatice\"\n  ),\n  Due_Date = c(\n    \"April 12, 2026\", \"April 12, 2026\",\n    \"March 22, 2026\", \"April 5, 2026\", \"April 5, 2026\",\n    \"April 19, 2026\", \"April 19, 2026\", \"April 19, 2026\",\n    \"April 26, 2026\", \"April 26, 2026\", \"May 3, 2026\"\n  ),\n  Status = c(\n    \"Not Started\", \"Not Started\", \"Not Started\", \"Not Started\", \"Not Started\",\n    \"Not Started\", \"Not Started\", \"Not Started\", \"Not Started\", \"Not Started\", \"Not Started\"\n  )\n)\n\ndatatable(schedule,\n  filter = \"top\",\n  class = \"stripe hover\",\n  options = list(\n    pageLength = 15,\n    autoWidth = TRUE,\n    dom = \"ftip\"\n  ),\n  colnames = c(\"Task\", \"Track\", \"Owner\", \"Due Date\", \"Status\")\n)"
+    "text": "Project Schedule\n\n\nCode\nlibrary(DT)\nschedule &lt;- data.frame(\n  Task = c(\n    \"Literature Review\", \"Source Compilation\",\n    \"Data Source Decision\", \"API Extraction\", \"Data Cleaning\",\n    \"TF-IDF Analysis\", \"Topic Modeling\", \"Sentiment Analysis\",\n    \"Methods Section\", \"Results Section\", \"Conclusion\"\n  ),\n  Track = c(\n    \"Literature\", \"Literature\",\n    \"Data/Analysis\", \"Data/Analysis\", \"Data/Analysis\",\n    \"Data/Analysis\", \"Data/Analysis\", \"Data/Analysis\",\n    \"Writing\", \"Writing\", \"Writing\"\n  ),\n  Owner = c(\n    \"Hatice & Susan\", \"Hatice & Susan\",\n    \"Full Team\", \"Mamie\", \"Mamie & Adilene\",\n    \"Mamie & Adilene\", \"Mamie & Adilene\", \"Mamie & Adilene\",\n    \"Adilene & Mamie\", \"Adilene & Mamie\", \"Susan & Hatice\"\n  ),\n  Due_Date = c(\n    \"April 12, 2026\", \"April 12, 2026\",\n    \"March 22, 2026\", \"April 5, 2026\", \"April 5, 2026\",\n    \"April 19, 2026\", \"April 19, 2026\", \"April 19, 2026\",\n    \"April 26, 2026\", \"April 26, 2026\", \"May 3, 2026\"\n  ),\n  Status = c(\n    \"In Progress\", \"In Progress\", \"Complete\", \"In Progress\", \"In Progress\",\n    \"In Progress\", \"In Progress\", \"In Progress\", \"In Progress\", \"In Progress\", \"In Progress\"\n  )\n)\ndatatable(schedule,\n  filter = \"top\",\n  class = \"stripe hover\",\n  options = list(\n    pageLength = 15,\n    autoWidth = TRUE,\n    dom = \"ftip\"\n  ),\n  colnames = c(\"Task\", \"Track\", \"Owner\", \"Due Date\", \"Status\")\n)"
   },
   {
     "objectID": "past_work/assignment5DV.html",
@@ -285,5 +285,12 @@
     "title": "Past Work",
     "section": "Group Projects",
     "text": "Group Projects\n\nMapping Civic Inequality in Texas: Gardens and Deserts of Democratic Engagement\nMapping Urban Development & Gentrification in Dallas, TX"
+  },
+  {
+    "objectID": "project_schedule.html#literature-review-data-analysis-repository-ai-prompts",
+    "href": "project_schedule.html#literature-review-data-analysis-repository-ai-prompts",
+    "title": "EPPS 6323 - Group Project Schedule",
+    "section": "Literature Review | Data Analysis Repository | AI Prompts",
+    "text": "Literature Review | Data Analysis Repository | AI Prompts"
   }
 ]
